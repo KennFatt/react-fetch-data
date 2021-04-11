@@ -15,7 +15,7 @@
 ![Dom Tree representation](./docs/domtree.png "DOM Tree")
 
 
-## ⌛ What i've learn
+## ⌛ What i've learned
 
 1. We can't use `async` function for the `useEffect` hook parameter. But instead, we could create an `async` inside of it.
 
