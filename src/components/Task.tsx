@@ -7,9 +7,9 @@ interface Props {
 }
 
 const Task: React.FC<Props> = ({ id, title, onRemove }) => {
-  const [fadeOut, setFadeOut] = useState(false);
+  const [isFadeOut, setIsFadeOut] = useState(false);
   const onButtonClicked = () => {
-    setFadeOut(true);
+    setIsFadeOut(true);
 
     setTimeout(() => {
       onRemove(id);
@@ -19,7 +19,7 @@ const Task: React.FC<Props> = ({ id, title, onRemove }) => {
   return (
     <li
       className={`py-4 px-2 flex justify-between items-center bg-gray-50 rounded-md shadow-sm hover:shadow-md ${
-        fadeOut && "opacity-0 transition cursor-default duration-300"
+        isFadeOut && "opacity-0 transition cursor-default duration-300"
       }`}>
       <h3 className="text-green-800 font-semibold">{title}</h3>
       <button onClick={onButtonClicked}>
