@@ -27,7 +27,7 @@ module.exports = {
     splitting: true,
     sourcemap: false,
     manifest: false,
-    target: "es2020"
+    target: "es2020",
   },
   packageOptions: {
     /* ... */
@@ -37,6 +37,7 @@ module.exports = {
     open: "none",
     output: "stream",
     hmr: true,
+    hmrErrorOverlay: false,
   },
   buildOptions: {
     /* ... */

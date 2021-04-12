@@ -3,9 +3,9 @@
 ## 🎇 Goals
 
 - Fetch a data with React Hook: useEffect.
-
 - Request a data over **GET** method with [Axios](https://github.com/axios/axios).
 - Provide a **loading indicator** while waiting the data.
+- Catching asynchronous error with `ErrorBoundary`.
 
 ## 🪡 Implementation Details
 
